@@ -6,9 +6,9 @@ var sk2 = 0;
 while (sk == false) {
     sk1 = Math.floor(Math.random() * 11);
     sk2 = Math.floor(Math.random() * 11);
-    console.log('skaicius 1: ' + sk1);
-    console.log('skaicius 2: ' + sk2);
+    console.log('skaicius 1: ' + sk1, 'skaicius 2: ' + sk2);
     if (sk1 != sk2) {
         sk = true;
     }
 }
+
