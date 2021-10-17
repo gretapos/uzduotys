@@ -27,4 +27,4 @@ console.log("naujausia pinigine: ", naujausiaPinigine)
 
 naujausiaPinigine[2].sort();
 
-console.log("pagal abecele: ", naujausiaPinigine)
+console.log("korteles pagal abecele: ", naujausiaPinigine)
