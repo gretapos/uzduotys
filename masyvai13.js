@@ -29,33 +29,23 @@ naujausiaPinigine[2].sort();
 
 console.log("korteles pagal abecele: ", naujausiaPinigine)
 
-
-for (let i = naujausiaPinigine[2].length; i < 20; i++) {
-     if (Math.trunc(Math.random() * 2) < 1) {
-        naujausiaPinigine[2][i] = "MasterCard";
+while (naujausiaPinigine[2].length <= 20){
+    if (Math.trunc(Math.random() * 2) < 1) {
+        naujausiaPinigine[2].push("MasterCard");
     } else {
-        naujausiaPinigine[2][i] = "Visa";
-     }
- }
-     console.log("i korteliu skyriu prideta atsitiktiniu Visa ir Master kortelius ir masyvo ilgis yra 20:", naujausiaPinigine[2]);
+        naujausiaPinigine[2].push("Visa");
+    }
+}
 
-     while (naujausiaPinigine[2].length <= 20){
-         if (Math.trunc(Math.random() * 2) < 1) {
-            naujausiaPinigine[2].push("MasterCard");
-        } else {
-            naujausiaPinigine[2].push("Visa");
-        }
-    };
+console.log('Visa ir MasterCard + korteles: ', naujausiaPinigine[2])
 
-    console.log('Visa ir MasterCard + korteles: ', naujausiaPinigine[2])
-
-    var VisaKiekis = 0;
-    var MasterCardKiekis = 0;
-    naujausiaPinigine[2].forEach((kortele, index) => {
-        if (kortele == 'Visa') {
-            VisaKiekis++
-        } else if (kortele == 'MasterCard'){
-            MasterCardKiekis++;
-        }
-    });
-    console.log('Visa kiekis: ', VisaKiekis, 'MasterCard kiekis: ', MasterCardKiekis)
+var VisaKiekis = 0;
+var MasterCardKiekis = 0;
+naujausiaPinigine[2].forEach((kortele, index) => {
+    if (kortele == 'Visa') {
+        VisaKiekis++
+    } else if (kortele == 'MasterCard'){
+        MasterCardKiekis++;
+    }
+});
+console.log('Visa kiekis: ', VisaKiekis, 'MasterCard kiekis: ', MasterCardKiekis)
