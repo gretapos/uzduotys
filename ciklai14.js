@@ -12,7 +12,7 @@
       console.log('skaicius 1: ' + sk1, 'skaicius 2: ' + sk2);
       sum1 += sk1;
       sum2 += sk2; 
-      if (sk1 != sk2 && sum1 > 100 && sum2 > 100) {
+      if (sum1 > 100 && sum2 > 100) {
           sk = true;
       }
       console.log(sum1, sum2)
